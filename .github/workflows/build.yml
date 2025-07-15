@@ -28,7 +28,7 @@ jobs:
           name: boost-${{ matrix.os }}
           path: |
             cdeps_boost_1_88.zip
-          retention-days: 7
+          retention-days: 1
 
       - name: Fail if execution failed
         if: env.exit_code != '0'
